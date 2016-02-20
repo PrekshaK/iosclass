@@ -14,6 +14,7 @@
 		BC038FFE1C63E4A8008D2860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC038FFC1C63E4A8008D2860 /* LaunchScreen.storyboard */; };
 		BC0390091C63E4A9008D2860 /* newtableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0390081C63E4A9008D2860 /* newtableTests.swift */; };
 		BC0390141C63E4A9008D2860 /* newtableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0390131C63E4A9008D2860 /* newtableUITests.swift */; };
+		BC09A3431C785514003782A6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC09A3421C785514003782A6 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BC03900F1C63E4A9008D2860 /* newtableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newtableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0390131C63E4A9008D2860 /* newtableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newtableUITests.swift; sourceTree = "<group>"; };
 		BC0390151C63E4A9008D2860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC09A3421C785514003782A6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				BC038FFA1C63E4A8008D2860 /* Assets.xcassets */,
 				BC038FFC1C63E4A8008D2860 /* LaunchScreen.storyboard */,
 				BC038FFF1C63E4A8008D2860 /* Info.plist */,
+				BC09A3421C785514003782A6 /* DetailViewController.swift */,
 			);
 			path = newtable;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC09A3431C785514003782A6 /* DetailViewController.swift in Sources */,
 				BC038FF61C63E4A8008D2860 /* ViewController.swift in Sources */,
 				BC038FF41C63E4A8008D2860 /* AppDelegate.swift in Sources */,
 			);
@@ -487,6 +491,7 @@
 				BC03901A1C63E4A9008D2860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC03901B1C63E4A9008D2860 /* Build configuration list for PBXNativeTarget "newtableTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				BC03901D1C63E4A9008D2860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC03901E1C63E4A9008D2860 /* Build configuration list for PBXNativeTarget "newtableUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				BC0390201C63E4A9008D2860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,24 +8,42 @@
 
 import UIKit
 
+ var words:[String] = ["Hello", "Preksha", "How", "Are", "You"]
+
+   var currentIndex:Int = 0;
+
+let BLANK_NOTE:String = "(New Note)"
+
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var words:[String] = ["Hello", "Preksha", "How", "Are", "You"]
+   
+    
+ 
+    
+    var detailViewController:DetailViewController?
 
     @IBOutlet weak var editToogleButton: UIBarButtonItem!
     
     @IBOutlet weak var addButton: UIBarButtonItem!
     
-    @IBOutlet weak var inputbar: UITextField!
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         
+//        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
+        
         super.viewDidLoad()
         
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        save()
+        super.viewWillAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,20 +62,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     
-    
-    @IBAction func actionAdd(sender: UIBarButtonItem) {
+    func save()
+    {
         
-        let inputtext = self.inputbar.text!
-        
-        let newword = inputtext == "" ? "None" : inputtext;
-        self.words.append(newword);
-        let indexPath = NSIndexPath(forRow: words.count - 1, inSection: 0);
+        let indexPath = NSIndexPath(forRow: words.count-1, inSection: 0)
         
         tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-        inputbar.text = "";
+        
         
     }
-    
 
     
     
@@ -73,7 +86,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         
         if editingStyle == .Delete{
-            self.words.removeAtIndex(indexPath.row)
+            words.removeAtIndex(indexPath.row)
             
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
             
@@ -100,6 +113,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return words.count
     }
+    
+    
+ 
 
 }
 
