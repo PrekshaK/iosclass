@@ -23,6 +23,7 @@
 		741BD23E1C8F693A002AEE43 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741BD23D1C8F693A002AEE43 /* Social.framework */; };
 		741BD2401C8F6945002AEE43 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741BD23F1C8F6945002AEE43 /* SystemConfiguration.framework */; };
 		741BD2431C8F69DE002AEE43 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741BD2421C8F69DE002AEE43 /* KinveyKit.framework */; };
+		7473E9991CA631D7000727F4 /* MainDisplayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473E9981CA631D7000727F4 /* MainDisplayPage.swift */; };
 		74F5F0E31CA0FF5A00CC702F /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F5F0E21CA0FF5A00CC702F /* HomePageController.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		741BD23F1C8F6945002AEE43 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		741BD2421C8F69DE002AEE43 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
 		741BD2451C8F6A91002AEE43 /* Trial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Trial-Bridging-Header.h"; sourceTree = "<group>"; };
+		7473E9981CA631D7000727F4 /* MainDisplayPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDisplayPage.swift; sourceTree = "<group>"; };
 		74F5F0E21CA0FF5A00CC702F /* HomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				741BD20F1C8F68AD002AEE43 /* Info.plist */,
 				741BD2451C8F6A91002AEE43 /* Trial-Bridging-Header.h */,
 				74F5F0E21CA0FF5A00CC702F /* HomePageController.swift */,
+				7473E9981CA631D7000727F4 /* MainDisplayPage.swift */,
 			);
 			path = Trial;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7473E9991CA631D7000727F4 /* MainDisplayPage.swift in Sources */,
 				741BD2061C8F68AD002AEE43 /* ViewController.swift in Sources */,
 				741BD2041C8F68AD002AEE43 /* AppDelegate.swift in Sources */,
 				74F5F0E31CA0FF5A00CC702F /* HomePageController.swift in Sources */,
